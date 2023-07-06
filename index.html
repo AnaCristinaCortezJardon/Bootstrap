@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+            .bg-body-tertiary{
+                color: rgb(160, 177, 231);
+            }
+            .navbar-brand:hover{
+              color: rgb(149, 165, 218);
+              background-color: aliceblue;
+              border-radius: 5px;
+            }
+            .nav-link:hover{
+              color: rgb(149, 165, 218);
+              background-color: aliceblue;
+              border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+      <!-- Barra de navegación -->
+      
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(149, 165, 218);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Música de México para el mundo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Bandera de México">
+                  <use xlink:href="bootstrap-icons/bootstrap-icons.svg#flag-fill"/>
+                </svg>
+              </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Página principal</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=--2NhLJGFuY&list=PLlRjT2Ji0ICv8N2agsv7K4NiBnCttIdbU" target="_blank">La historia de la Música Méxicana a través de sus creadores</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Artesanías
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://edomex.gob.mx/artesanias_mexiquenses#:~:text=En%20los%20talleres%20de%20estas,representativos%20de%20los%20textiles%20artesanales." target="_blank">Artesanías Mexiquenses</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://programadestinosmexico.com/descubre-mexico/artesanias/artesanias-de-jalisco.html" target="_blank">Artesanías Jaliscienses</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://www.yucatan.gob.mx/?p=artesanias" target="_blank">Artesanías Yucatecas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <!-- Carrusel -->
+          <div class="d-flex justify-content-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://www.elsoldemexico.com.mx/gossip/celebridades/dco7e4-manzaneroweb.jpg/ALTERNATES/LANDSCAPE_960/ManzaneroWEB.jpg" class="d-block" alt="AM1" width="559" height="399">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://billiken.lat/wp-content/uploads/2021/12/Consuelo-Vela%CC%81zquez_SITIO-1280x720.jpg" class="d-block" alt="CV1" width="559" height="399" >
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.elsoldeleon.com.mx/gossip/iys7ax-en-dolores-hidalgo/ALTERNATES/LANDSCAPE_960/En%20Dolores%20Hidalgo" class="d-block " alt="JAJ1" width="559" height="399">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <br>
+          <br>
+          <!-- Tarjetas -->
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_814301-MLM43346954297_092020-O.webp" class="card-img-top mx-auto" alt="AM22" style="width: 400px; height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;" >LP A MI AMOR... CON MI AMOR - ARMANDO MANZANERO</h5>
+                  <p class="card-text">Incluye su gran éxito,"Adoro" que consagró a Armando Manzanero como cantautor de balada y música romántica a nivel mundial y siendo interpretada en más de 5 idiomas o inclusive en versiones en español para audiencias coreanas, inglesas y japonesas. ¡Adquiérelo ya!</p>
+                  <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                    </svg>
+                    Añadir a la cesta
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://images.genius.com/e08ba62dda5a2d02d59d94c33870a4fc.500x500x1.jpg" class="card-img-top mx-auto" alt="CV2" style="width: 400px; height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">LP BÉSAME MUCHO - CONSUELO VELÁSQUEZ</h5>
+                  <p class="card-text">Incluye su gran éxito 'Bésame mucho' una pieza sonora magistral de la cultura tanto nacional como internacional, considerada las diez canciones de habla hispana más importantes del siglo XX, traducida en más de 20 idiomas y cantada y bailada en todo el mundo.</p>
+                  <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                    </svg>
+                    Añadir a la cesta
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_936758-MLM49839465823_052022-O.webp" class="card-img-top mx-auto" alt="JAJ2" style="width: 400px; height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title">LLP 15 ÉXITOS - JOSÉ ALFREDO JIMÉNEZ</h5>
+                  <p class="card-text">Incluye el éxito 'Si nos dejan' en donde Jose Alfredo plantea la utopía del lugar en que los amores profundos, pero imposibilitados, pueden estar juntos un sitio que solo encuentra cerca del cielo, en el pedestal de la gloria o después de la muerte un lugar lejano del mundo que se vuelve una promesa de realidad en donde solo cerca de dios será lo soñado.</p>
+                  <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                    </svg>
+                    Añadir a la cesta
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://images.45worlds.com/f/ab/jose-jose-pero-te-extrano-rca-victor-ab.jpg" class="card-img-top mx-auto" alt="JJ1" style="width: 400px; height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title">LP EL TRISTE - JOSÉ JOSÉ</h5>
+                  <p class="card-text">Incluye el éxito 'El triste' canción que coronó a José José como intérprete y que obtuvo el premio Hollywood a la mejor canción del mundo, con una letra profunda e impecable, una musicalidad extraordinaria que desafiaba la escuchade la época y con una interpretación que hoy en día no tiene comparación</p>
+                  <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                    </svg>
+                    Añadir a la cesta
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <!-- Footer -->
+          <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center ">
+
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg xmlns="http://www.w3.org/2000/svg"  width="21" height="21" fill="currentColor" class="bi bi-boombox-fill" viewBox="0 0 16 16">
+                    <path d="M14 0a.5.5 0 0 1 .5.5V2h.5a1 1 0 0 1 1 1v2H0V3a1 1 0 0 1 1-1h12.5V.5A.5.5 0 0 1 14 0ZM2 3.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm7.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 3h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1ZM6 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-1.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm7 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    <path d="M0 6h16v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V6Zm2 4.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Zm7 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Z"/>
+                  </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 México</span>
+              </div>
+
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/" target="_blank" onclick="showAlert('Twitter')">Twitter<svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank" onclick="showAlert('Instagram')">Instagram<svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank" onclick="showAlert('Facebook')">Facebook<svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              </ul>
+              
+              <script>
+                function showAlert(linkName) {
+                  alert("Has abierto el enlace de " + linkName);
+                }
+              </script>
+            </footer>
+          </div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
